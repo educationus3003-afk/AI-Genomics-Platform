@@ -139,3 +139,10 @@ variants_annotation_pipeline/**/*.pyc
 # Generated stale backups
 *.stale_backup
 *_before_final_fix.html
+
+# Old and duplicate generated reports
+99_Archive_Development_backup/
+genomic_ai_report.html
+*_before_final_fix.html
+*_before_sync.html
+*.stale_backup
