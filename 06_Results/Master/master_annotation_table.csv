@@ -1,0 +1,5 @@
+CHROM,POS,REF,ALT,GENE,INTERVAR_CLASSIFICATION,ACMG_EVIDENCE,SOURCE
+7,117548628,ATT,A,CFTR,Not assessed,Requires manual ACMG review,Validated disease demonstration VCF
+11,52469944,C,T,HBB,Not assessed,Requires manual ACMG review,Validated disease demonstration VCF
+X,154030948,G,A,MECP2,Not assessed,Requires manual ACMG review,Validated disease demonstration VCF
+15,48520716,G,A,FBN1,Not assessed,Requires manual ACMG review,Validated disease demonstration VCF

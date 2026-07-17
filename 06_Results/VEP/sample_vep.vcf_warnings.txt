@@ -1,0 +1,7 @@
+WARNING: line 2 skipped (13 32339421 rs28897743 A G 1002.1 PASS DP=178;...): Chromosome 13 not found in annotation sources or synonyms; chromosome 13 does not overlap any features
+WARNING: line 3 skipped (7 117548628 rs113993960 ATT A 1254.3 PASS DP=1...): Chromosome 7 not found in annotation sources or synonyms; chromosome 7 does not overlap any features
+WARNING: line 4 skipped (2 179443144 . G A 876.4 PASS DP=112;AF=0.491;G...): Chromosome 2 not found in annotation sources or synonyms; chromosome 2 does not overlap any features
+WARNING: line 5 skipped (19 41121935 rs429358 T C 934.7 PASS DP=156;AF=...): Chromosome 19 not found in annotation sources or synonyms; chromosome 19 does not overlap any features
+WARNING: line 6 skipped (11 5246944 rs33950507 C T 1099.8 PASS DP=167;A...): Chromosome 11 not found in annotation sources or synonyms; chromosome 11 does not overlap any features
+WARNING: line 7 skipped (17 43057051 rs80357382 G A 1312.0 PASS DP=221;...): Chromosome 17 not found in annotation sources or synonyms; chromosome 17 does not overlap any features
+WARNING: line 8 skipped (12 103234189 . C T 701.2 PASS DP=98;AF=0.490;G...): Chromosome 12 not found in annotation sources or synonyms; chromosome 12 does not overlap any features

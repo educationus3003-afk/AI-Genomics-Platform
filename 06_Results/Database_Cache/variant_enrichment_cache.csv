@@ -1,0 +1,8 @@
+VARIANT_ID,dbSNP_ID,gnomAD_AF,gnomAD_Status,AlphaMissense_Score,AlphaMissense_Prediction,SIFT_Prediction,PolyPhen_Prediction,Ensembl_Most_Severe_Consequence,Enrichment_Source
+chr7:117548628:ATT>A,rs1805177,0.06204,Common,,Not available,Not available,Not available,splice_polypyrimidine_tract_variant,Ensembl VEP REST
+chr11:5246944:C>T,Not found,,Not found in returned frequencies,,Not available,Not available,Not available,intron_variant,Ensembl VEP REST
+chrX:154030664:C>T,Not found,,Not found in returned frequencies,,Not available,Not available,Not available,synonymous_variant,Ensembl VEP REST
+chr15:48473803:G>A,Not found,,Not found in returned frequencies,,Not available,Not available,Not available,intron_variant,Ensembl VEP REST
+chr11:52469944:C>T,Not found,,Not found in returned frequencies,,Not available,Not available,Not available,intergenic_variant,Ensembl VEP REST
+chrX:154030948:G>A,rs61751362,,Not found in returned frequencies,,Not available,Not available,Not available,stop_gained,Ensembl VEP REST
+chr15:48520716:G>A,rs794728165,,Not found in returned frequencies,,Not available,Not available,Not available,stop_gained,Ensembl VEP REST

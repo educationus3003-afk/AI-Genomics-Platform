@@ -1,0 +1,55 @@
+{
+    "ClinVar": [
+        "ClinicalSignificance",
+        "ReviewStatus",
+        "Disease",
+        "VariationID"
+    ],
+
+    "gnomAD": [
+        "AlleleFrequency",
+        "AlleleCount",
+        "Population"
+    ],
+
+    "OMIM": [
+        "DiseaseName",
+        "Inheritance",
+        "OMIM_ID"
+    ],
+
+    "ClinGen": [
+        "GeneDosage",
+        "DiseaseValidity"
+    ],
+
+    "UniProt": [
+        "Protein",
+        "Function",
+        "Domains"
+    ],
+
+    "GeneCards": [
+        "GeneSummary",
+        "Expression",
+        "Aliases"
+    ],
+
+    "AlphaMissense":[
+        "Score",
+        "Prediction"
+    ],
+
+    "REVEL":[
+        "Score"
+    ],
+
+    "CADD":[
+        "RawScore",
+        "PHRED"
+    ],
+
+    "SpliceAI":[
+        "DeltaScore"
+    ]
+}

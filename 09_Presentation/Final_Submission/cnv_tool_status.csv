@@ -1,0 +1,5 @@
+tool,executables,purpose,expected_input,expected_output,installed,executable_path,integration_status
+AnnotSV,"['AnnotSV', 'annotSV']",Structural-variant annotation,BED or SV-VCF,Annotated TSV,False,Not detected,Documented integration; external setup required
+ClassifyCNV,"['ClassifyCNV', 'classifycnv']",ACMG/ClinGen CNV classification,BED,Classification and evidence table,False,Not detected,Documented integration; external setup required
+ISV-CNV,"['isvcnv', 'ISV-CNV']",CNV interpretation support,CNV coordinates and annotations,Interpretation evidence,False,Not detected,Documented integration; external setup required
+ClinGen CNV,[],Dosage sensitivity and CNV evidence,CNV region,Manual or API-derived evidence,False,Not detected,Documented integration; external setup required

@@ -1,0 +1,5 @@
+Gene	Disease	Chromosome	Position	REF	ALT	Normalized_Count	Status
+CFTR	Cystic_fibrosis	chr7	117587778	G	T	1	PASS
+HBB	Sickle_cell_disease	chr11	5227002	T	A	1	PASS
+MECP2	Rett_syndrome	chrX	154030948	G	A	1	PASS
+FBN1	Marfan_syndrome	chr15	48520716	G	A	1	PASS

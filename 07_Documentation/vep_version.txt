@@ -1,0 +1,20 @@
+#----------------------------------#
+# ENSEMBL VARIANT EFFECT PREDICTOR #
+#----------------------------------#
+
+Versions:
+  ensembl              : 116.c0cf13d
+  ensembl-compara      : 116.46f80af
+  ensembl-funcgen      : 116.90049ea
+  ensembl-io           : 116.6afb5dc
+  ensembl-variation    : 116.2fb834b
+  ensembl-vep          : 116.0
+
+Help: dev@ensembl.org , helpdesk@ensembl.org
+Twitter: @ensembl
+
+http://www.ensembl.org/info/docs/tools/vep/script/index.html
+
+Usage:
+./vep [--cache|--offline|--database] [arguments]
+

@@ -1,0 +1,9 @@
+##fileformat=VCFv4.2
+##reference=GRCh38
+##contig=<ID=chr11>
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=DISEASE,Number=1,Type=String,Description="Target disease">
+##INFO=<ID=TRANSCRIPT_HGVS,Number=1,Type=String,Description="Transcript HGVS">
+##INFO=<ID=PROTEIN_HGVS,Number=1,Type=String,Description="Protein HGVS">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr11	5227002	rs334	T	A	.	PASS	GENE=HBB;DISEASE=Sickle_cell_disease;TRANSCRIPT_HGVS=NM_000518.5:c.20A>T;PROTEIN_HGVS=NP_000509.1:p.Glu7Val

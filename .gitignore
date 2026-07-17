@@ -1,0 +1,141 @@
+# ============================================================
+# AI Genomics Platform — Git exclusions
+# ============================================================
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+conda-env/
+*.egg-info/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+**/credentials.*
+**/secrets.*
+
+# Editors and operating systems
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+.cache/
+work/
+.nextflow/
+.nextflow.log*
+
+# Local development archives
+99_Archive_Development_backup/
+*.before_*
+*.bak
+*.old
+*.orig
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+
+# Reference genome resources
+04_Data/Reference/
+*.fa
+*.fasta
+*.fna
+*.fa.gz
+*.fasta.gz
+*.fna.gz
+*.fai
+*.dict
+*.gzi
+
+# VEP and SnpEff caches
+04_Data/VEP_cache/
+**/.vep/
+**/vep_cache/
+**/snpEff/data/
+
+# Downloaded ClinVar resources
+04_Data/Database_Resources/ClinVar/*.vcf
+04_Data/Database_Resources/ClinVar/*.vcf.gz
+04_Data/Database_Resources/ClinVar/*.tbi
+04_Data/Database_Resources/ClinVar/*.csi
+
+# Large prediction/database resources
+04_Data/Database_Resources/gnomAD/
+04_Data/Database_Resources/dbSNP/
+04_Data/Database_Resources/SpliceAI/
+04_Data/Database_Resources/CADD/
+04_Data/Database_Resources/REVEL/
+04_Data/Database_Resources/AlphaMissense/
+
+# ANNOVAR software and databases
+02_Tools/ANNOVAR/annovar/
+02_Tools/ANNOVAR/humandb/
+02_Tools/ANNOVAR/annovar.latest.tar.gz
+
+# Containers and large genomics binaries
+*.sif
+*.img
+*.bam
+*.bai
+*.cram
+*.crai
+*.bcf
+*.csi
+
+# Private or patient-derived data
+patient_data/
+clinical_data/
+private_data/
+identifiable_data/
+
+# Generated outputs that should remain local
+06_Results/Temporary/
+06_Results/Intermediate/
+
+# Keep lightweight example and summary outputs
+!examples/output/**
+!06_Results/**/*.csv
+!06_Results/**/*.json
+!06_Results/**/*.txt
+!08_Reports/**/*.html
+!07_Visualizations/**/*.png
+
+# Nested annotation pipeline local resources
+variants_annotation_pipeline/.git_local_backup/
+variants_annotation_pipeline/resources/reference/
+variants_annotation_pipeline/resources/vep_cache/
+variants_annotation_pipeline/resources/databases/
+variants_annotation_pipeline/work/
+variants_annotation_pipeline/.nextflow/
+variants_annotation_pipeline/.nextflow.log*
+variants_annotation_pipeline/__pycache__/
+variants_annotation_pipeline/**/*.pyc
+
+# Generated stale backups
+*.stale_backup
+*_before_final_fix.html

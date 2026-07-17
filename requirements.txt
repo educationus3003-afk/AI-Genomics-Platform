@@ -1,0 +1,11 @@
+pandas
+numpy
+requests
+python-dotenv
+PyYAML
+Jinja2
+biopython
+pysam
+matplotlib
+tqdm
+tenacity

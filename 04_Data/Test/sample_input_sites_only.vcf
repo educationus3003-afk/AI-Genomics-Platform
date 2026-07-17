@@ -1,0 +1,34 @@
+##fileformat=VCFv4.2
+##fileDate=20260708
+##source=GenomePipeline_v3.1
+##reference=GRCh38/hg38
+##FILTER=<ID=PASS,Description="All filters passed">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Total read depth">
+##INFO=<ID=AF,Number=A,Type=Float,Description="Allele frequency">
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=CONSEQUENCE,Number=1,Type=String,Description="VEP consequence">
+##INFO=<ID=HGVSC,Number=1,Type=String,Description="HGVS cDNA notation">
+##INFO=<ID=HGVSP,Number=1,Type=String,Description="HGVS protein notation">
+##INFO=<ID=GNOMAD_AF,Number=1,Type=Float,Description="gnomAD v4.1 allele frequency">
+##INFO=<ID=GNOMAD_POPMAX,Number=1,Type=Float,Description="gnomAD v4.1 popmax AF">
+##INFO=<ID=CLINVAR,Number=1,Type=String,Description="ClinVar clinical significance">
+##INFO=<ID=CLINVAR_STARS,Number=1,Type=Integer,Description="ClinVar review stars">
+##INFO=<ID=CADD_PHRED,Number=1,Type=Float,Description="CADD Phred-scaled score">
+##INFO=<ID=REVEL,Number=1,Type=Float,Description="REVEL pathogenicity score">
+##INFO=<ID=ALPHAMISSENSE,Number=1,Type=Float,Description="AlphaMissense score">
+##INFO=<ID=SPLICEAI_MAX,Number=1,Type=Float,Description="SpliceAI max delta score">
+##INFO=<ID=OMIM,Number=1,Type=String,Description="OMIM phenotype association">
+##INFO=<ID=INHERITANCE,Number=1,Type=String,Description="Expected inheritance pattern">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth">
+##FORMAT=<ID=AD,Number=R,Type=Integer,Description="Allele depth REF,ALT">
+##FORMAT=<ID=GQ,Number=1,Type=Integer,Description="Genotype quality">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+1	94458393	rs80338939	C	T	998.5	PASS	DP=142;AF=0.497;GENE=ABCD3;CONSEQUENCE=missense_variant;HGVSC=NM_001122.4:c.2003G>A;HGVSP=NM_001122.4:p.(Arg668His);GNOMAD_AF=0.000003;GNOMAD_POPMAX=0.000008;CLINVAR=Uncertain_significance;CLINVAR_STARS=1;CADD_PHRED=28.4;REVEL=0.823;ALPHAMISSENSE=0.891;SPLICEAI_MAX=0.02;OMIM=Zellweger_spectrum_disorder;INHERITANCE=AR
+13	32339421	rs28897743	A	G	1002.1	PASS	DP=178;AF=0.506;GENE=BRCA2;CONSEQUENCE=missense_variant;HGVSC=NM_000059.4:c.8023A>G;HGVSP=NM_000059.4:p.(Arg2675Gly);GNOMAD_AF=0.000001;GNOMAD_POPMAX=0.000002;CLINVAR=Pathogenic;CLINVAR_STARS=3;CADD_PHRED=31.2;REVEL=0.964;ALPHAMISSENSE=0.962;SPLICEAI_MAX=0.01;OMIM=Hereditary_breast_and_ovarian_cancer;INHERITANCE=AD
+7	117548628	rs113993960	ATT	A	1254.3	PASS	DP=195;AF=0.495;GENE=CFTR;CONSEQUENCE=frameshift_variant;HGVSC=NM_000492.4:c.1521_1523delCTT;HGVSP=NM_000492.4:p.(Phe508del);GNOMAD_AF=0.021;GNOMAD_POPMAX=0.028;CLINVAR=Pathogenic;CLINVAR_STARS=4;CADD_PHRED=35.0;REVEL=.;ALPHAMISSENSE=.;SPLICEAI_MAX=0.08;OMIM=Cystic_fibrosis;INHERITANCE=AR
+2	179443144	.	G	A	876.4	PASS	DP=112;AF=0.491;GENE=SCN1A;CONSEQUENCE=stop_gained;HGVSC=NM_006920.6:c.4117C>T;HGVSP=NM_006920.6:p.(Arg1373Ter);GNOMAD_AF=0.0;GNOMAD_POPMAX=0.0;CLINVAR=not_in_ClinVar;CLINVAR_STARS=0;CADD_PHRED=40.0;REVEL=.;ALPHAMISSENSE=.;SPLICEAI_MAX=0.03;OMIM=Dravet_syndrome;INHERITANCE=AD_de_novo
+19	41121935	rs429358	T	C	934.7	PASS	DP=156;AF=0.64;GENE=APOE;CONSEQUENCE=missense_variant;HGVSC=NM_000041.4:c.388T>C;HGVSP=NM_000041.4:p.(Cys130Arg);GNOMAD_AF=0.152;GNOMAD_POPMAX=0.222;CLINVAR=Likely_benign;CLINVAR_STARS=2;CADD_PHRED=12.1;REVEL=0.211;ALPHAMISSENSE=0.093;SPLICEAI_MAX=0.00;OMIM=Alzheimer_disease_susceptibility;INHERITANCE=AD_risk
+11	5246944	rs33950507	C	T	1099.8	PASS	DP=167;AF=0.502;GENE=HBB;CONSEQUENCE=missense_variant;HGVSC=NM_000518.5:c.17A>T;HGVSP=NM_000518.5:p.(Glu6Val);GNOMAD_AF=0.001;GNOMAD_POPMAX=0.008;CLINVAR=Pathogenic;CLINVAR_STARS=4;CADD_PHRED=29.8;REVEL=0.987;ALPHAMISSENSE=0.978;SPLICEAI_MAX=0.00;OMIM=Sickle_cell_disease;INHERITANCE=AR
+17	43057051	rs80357382	G	A	1312.0	PASS	DP=221;AF=0.498;GENE=BRCA1;CONSEQUENCE=splice_donor_variant;HGVSC=NM_007294.4:c.5467+1G>A;HGVSP=NM_007294.4:p.?;GNOMAD_AF=0.0;GNOMAD_POPMAX=0.0;CLINVAR=Pathogenic;CLINVAR_STARS=3;CADD_PHRED=33.5;REVEL=.;ALPHAMISSENSE=.;SPLICEAI_MAX=0.98;OMIM=Hereditary_breast_and_ovarian_cancer;INHERITANCE=AD
+12	103234189	.	C	T	701.2	PASS	DP=98;AF=0.490;GENE=MYO7A;CONSEQUENCE=missense_variant;HGVSC=NM_000260.4:c.5944G>A;HGVSP=NM_000260.4:p.(Gly1982Arg);GNOMAD_AF=0.000009;GNOMAD_POPMAX=0.000014;CLINVAR=Uncertain_significance;CLINVAR_STARS=1;CADD_PHRED=24.1;REVEL=0.612;ALPHAMISSENSE=0.544;SPLICEAI_MAX=0.04;OMIM=Usher_syndrome_type_1;INHERITANCE=AR

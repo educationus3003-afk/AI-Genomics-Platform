@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GPT vs Pipeline Variant Annotation Comparison</title>
+<style>
+:root {
+  --bg: #f5f7fb;
+  --panel: #ffffff;
+  --text: #172033;
+  --muted: #60708a;
+  --line: #dfe5ef;
+  --ok-bg: #e8f7ee;
+  --ok: #18733b;
+  --warn-bg: #fff4d6;
+  --warn: #8a5a00;
+  --bad-bg: #fdeaea;
+  --bad: #ad2626;
+  --neutral-bg: #eef1f5;
+  --neutral: #586273;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+               "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 32px 20px 60px;
+}
+.hero {
+  background: linear-gradient(135deg, #173c9c, #3471ee);
+  color: white;
+  border-radius: 18px;
+  padding: 30px;
+  box-shadow: 0 12px 32px rgba(31, 65, 140, .2);
+}
+.hero h1 { margin: 0 0 8px; font-size: 30px; }
+.hero p { margin: 4px 0; opacity: .94; }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin: 18px 0 28px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 4px 16px rgba(25, 42, 75, .05);
+}
+.metric { font-size: 28px; font-weight: 800; margin-top: 5px; }
+.label {
+  color: var(--muted);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+section {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 22px;
+  margin-top: 18px;
+}
+h2 { margin: 0 0 10px; font-size: 22px; }
+h3 { margin: 20px 0 8px; font-size: 17px; }
+p { margin: 8px 0; }
+.callout {
+  padding: 14px 16px;
+  border-radius: 10px;
+  margin: 12px 0;
+  border-left: 5px solid;
+}
+.callout.bad { background: var(--bad-bg); border-color: var(--bad); }
+.callout.warn { background: var(--warn-bg); border-color: var(--warn); }
+.callout.ok { background: var(--ok-bg); border-color: var(--ok); }
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+table { width: 100%; border-collapse: collapse; min-width: 850px; }
+th {
+  background: #f0f4fb;
+  color: #27344b;
+  text-align: left;
+  font-size: 13px;
+  padding: 11px;
+  border-bottom: 1px solid var(--line);
+}
+td {
+  vertical-align: top;
+  padding: 11px;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+}
+tr:last-child td { border-bottom: none; }
+.badge {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 4px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .03em;
+}
+.badge.ok { background: var(--ok-bg); color: var(--ok); }
+.badge.warn { background: var(--warn-bg); color: var(--warn); }
+.badge.bad { background: var(--bad-bg); color: var(--bad); }
+.badge.neutral { background: var(--neutral-bg); color: var(--neutral); }
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.sub { color: var(--muted); font-size: 12px; }
+ul { margin: 8px 0 8px 20px; padding: 0; }
+li { margin: 6px 0; }
+.footer {
+  color: var(--muted);
+  text-align: center;
+  font-size: 12px;
+  margin-top: 24px;
+}
+@media (max-width: 850px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 520px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="hero">
+    <h1>GPT vs Pipeline Annotation Comparison</h1>
+    <p><strong>Diseases:</strong> Fabry, Monilethrix, Androgen Insensitivity Syndrome (AIS), and NF1</p>
+    <p><strong>Updated:</strong> AIS pipeline VCF.gz included; the tabix-index-only entry has been replaced.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <div class="label">Usable uploaded data files</div>
+      <div class="metric">16 / 16</div>
+      <div class="sub">8 GPT and 8 pipeline files</div>
+    </div>
+    <div class="card">
+      <div class="label">Analyzable comparisons</div>
+      <div class="metric">8 / 8</div>
+      <div class="sub">All four SNV and all four CNV pairs</div>
+    </div>
+    <div class="card">
+      <div class="label">Core findings agreeing</div>
+      <div class="metric">8 / 8</div>
+      <div class="sub">Disease-causing SNV/CNV conclusions</div>
+    </div>
+    <div class="card">
+      <div class="label">Whole-file exact matches</div>
+      <div class="metric">4 / 8</div>
+      <div class="sub">All CNVs match; complete SNV sets do not</div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Final verdict</h2>
+    <div class="callout ok">
+      <strong>All eight GPT-versus-pipeline pairs can now be compared.</strong>
+      The uploaded <code>ais.final.small_variants.annotated.vcf.gz</code>
+      has replaced the earlier tabix-index-only item.
+    </div>
+    <div class="callout ok">
+      <strong>The main disease-causing findings agree in all eight comparisons.</strong>
+      For Fabry, Monilethrix, AIS, and NF1, the same central SNV and CNV are identified
+      with consistent main gene, consequence, HGVS, ClinVar, AnnotSV, and
+      ClassifyCNV interpretations where those fields apply.
+    </div>
+    <div class="callout warn">
+      <strong>The four complete SNV files are not record-for-record matches.</strong>
+      Every pipeline SNV VCF contains 6 variants, whereas every GPT SNV VCF contains
+      19 variants. The 6 retained pipeline records are exact coordinate/allele matches
+      and include the disease-causing variant, but 13 GPT background variants are not
+      present in each pipeline output.
+    </div>
+    <p>
+      <strong>Overall conclusion:</strong> the biological conclusions match,
+      all CNV coordinate sets match completely, and all disease-causing SNVs match.
+      However, the full SNV record sets differ because the pipeline files retain only
+      6 of the 19 GPT records.
+    </p>
+  </section>
+
+  <section>
+    <h2>Pair-level summary</h2>
+    <div class="table-wrap"><table><thead><tr><th>Disease</th><th>Core SNV finding</th><th>Whole SNV file</th><th>Core CNV finding</th><th>Whole CNV coordinate set</th><th>Interpretation</th></tr></thead><tbody><tr><td>Fabry</td><td><span class="badge ok">MATCH</span></td><td><span class="badge bad">MISMATCH</span></td><td><span class="badge ok">MATCH</span></td><td><span class="badge ok">MATCH</span></td><td>The disease-causing SNV and CNV agree, but the complete SNV record set does not because the pipeline output contains only 6 of the 19 GPT records.</td></tr><tr><td>Monilethrix</td><td><span class="badge ok">MATCH</span></td><td><span class="badge bad">MISMATCH</span></td><td><span class="badge ok">MATCH</span></td><td><span class="badge ok">MATCH</span></td><td>The disease-causing SNV and CNV agree, but the complete SNV record set does not because the pipeline output contains only 6 of the 19 GPT records.</td></tr><tr><td>AIS</td><td><span class="badge ok">MATCH</span></td><td><span class="badge bad">MISMATCH</span></td><td><span class="badge ok">MATCH</span></td><td><span class="badge ok">MATCH</span></td><td>The disease-causing SNV and CNV agree, but the complete SNV record set does not because the pipeline output contains only 6 of the 19 GPT records.</td></tr><tr><td>NF1</td><td><span class="badge ok">MATCH</span></td><td><span class="badge bad">MISMATCH</span></td><td><span class="badge ok">MATCH</span></td><td><span class="badge ok">MATCH</span></td><td>The disease-causing SNV and CNV agree, but the complete SNV record set does not because the pipeline output contains only 6 of the 19 GPT records.</td></tr></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Uploaded-file inventory</h2>
+    <div class="table-wrap"><table><thead><tr><th>Side/type</th><th>Disease</th><th>Filename</th><th>Size</th><th>Usability</th><th>Note</th></tr></thead><tbody><tr><td>GPT SNV</td><td>Fabry</td><td><code>SYN_FABRY.final.small_variants.annotated.vcf</code></td><td>9.2 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>GPT SNV</td><td>Monilethrix</td><td><code>SYN_MONILETHRIX.final.small_variants.annotated.vcf</code></td><td>9.2 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>GPT SNV</td><td>AIS</td><td><code>SYN_AIS.final.small_variants.annotated.vcf</code></td><td>9.2 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>GPT SNV</td><td>NF1</td><td><code>SYN_NF1.final.small_variants.annotated.vcf</code></td><td>9.2 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>GPT CNV</td><td>Fabry</td><td><code>SYN_FABRY.final.cnv.annotated.vcf</code></td><td>7.5 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>GPT CNV</td><td>Monilethrix</td><td><code>SYN_MONILETHRIX.final.cnv.annotated.vcf</code></td><td>7.6 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>GPT CNV</td><td>AIS</td><td><code>SYN_AIS.final.cnv.annotated(1).vcf</code></td><td>7.5 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>GPT CNV</td><td>NF1</td><td><code>SYN_NF1.final.cnv.annotated.vcf</code></td><td>7.6 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>Pipeline SNV</td><td>Fabry</td><td><code>fabry.final.small_variants.annotated.vcf.gz</code></td><td>5.6 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>Pipeline SNV</td><td>Monilethrix</td><td><code>monilethrix.final.small_variants.annotated.vcf.gz</code></td><td>5.1 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>Pipeline SNV</td><td>AIS</td><td><code>ais.final.small_variants.annotated.vcf.gz</code></td><td>5.1 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>Pipeline SNV</td><td>NF1</td><td><code>nf1.final.small_variants.annotated.vcf.gz</code></td><td>5.2 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>Pipeline CNV</td><td>Fabry</td><td><code>fabry.final.cnv.summary.tsv</code></td><td>1.1 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>Pipeline CNV</td><td>Monilethrix</td><td><code>monilethrix.final.cnv.summary.tsv</code></td><td>1.1 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>Pipeline CNV</td><td>AIS</td><td><code>ais.final.cnv.summary.tsv</code></td><td>1.1 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr><tr><td>Pipeline CNV</td><td>NF1</td><td><code>nf1.final.cnv.summary.tsv</code></td><td>1.1 KB</td><td><span class="badge ok">MATCH</span></td><td>Usable data file</td></tr></tbody></table></div>
+  </section>
+
+  <section>
+    <h2>Small-variant comparison</h2>
+
+    <h3>Record-set coverage</h3>
+    <div class="table-wrap"><table><thead><tr><th>Disease</th><th>GPT records</th><th>Pipeline records</th><th>Exact coordinate/allele overlap</th><th>GPT records absent from pipeline</th><th>Pipeline-only records</th><th>Whole-file status</th><th>Details</th></tr></thead><tbody><tr><td>Fabry</td><td>19</td><td>6</td><td>6</td><td>13</td><td>0</td><td><span class="badge bad">MISMATCH</span></td><td>6/19 GPT variants are present in the pipeline output. All 6 shared records match in ID, QUAL, FILTER, FORMAT, and genotype.</td></tr><tr><td>Monilethrix</td><td>19</td><td>6</td><td>6</td><td>13</td><td>0</td><td><span class="badge bad">MISMATCH</span></td><td>6/19 GPT variants are present in the pipeline output. All 6 shared records match in ID, QUAL, FILTER, FORMAT, and genotype.</td></tr><tr><td>AIS</td><td>19</td><td>6</td><td>6</td><td>13</td><td>0</td><td><span class="badge bad">MISMATCH</span></td><td>6/19 GPT variants are present in the pipeline output. All 6 shared records match in ID, QUAL, FILTER, FORMAT, and genotype.</td></tr><tr><td>NF1</td><td>19</td><td>6</td><td>6</td><td>13</td><td>0</td><td><span class="badge bad">MISMATCH</span></td><td>6/19 GPT variants are present in the pipeline output. All 6 shared records match in ID, QUAL, FILTER, FORMAT, and genotype.</td></tr></tbody></table></div>
+
+    <div class="callout warn">
+      The same pattern is present in all four diseases: the pipeline output contains
+      6 of the 19 GPT variants and has no additional pipeline-only variants.
+      The missing 13 records appear to be synthetic background records.
+      The exact filtering or normalization reason should be confirmed from the
+      pipeline normalization log before the report states why they were removed.
+    </div>
+
+    <h3>Disease-causing SNV annotation</h3>
+    <div class="table-wrap"><table><thead><tr><th>Disease</th><th>Variant</th><th>Gene</th><th>Consequence / impact</th><th>HGVS</th><th>ClinVar</th><th>Pipeline SpliceAI</th><th>Core status</th></tr></thead><tbody><tr><td>Fabry</td><td><code>chrX:101398467 C&gt;T (rs104894828)</code></td><td>GLA<br><span class="sub">Pipeline: GLA</span></td><td>missense_variant / MODERATE<br><span class="sub">Pipeline: missense_variant / MODERATE</span></td><td>NM_000169.3:c.902G&gt;A; NP_000160.1:p.Arg301Gln<br><span class="sub">Pipeline: ENST00000218516.4:c.902G&gt;A; ENSP00000218516.4:p.Arg301Gln</span></td><td>Pathogenic<br><span class="sub">Pipeline: Pathogenic</span></td><td><code>T|RPL36A-HNRNPH2|0.00|0.00|0.00|0.00|13|-28|0|4,T|GLA|0.00|0.00|0.00|0.00|-35|-10|-35|-43</code></td><td><span class="badge ok">MATCH</span></td></tr><tr><td>Monilethrix</td><td><code>chr12:52306272 G&gt;T (rs121909130)</code></td><td>KRT86<br><span class="sub">Pipeline: KRT86</span></td><td>missense_variant / MODERATE<br><span class="sub">Pipeline: missense_variant / MODERATE</span></td><td>NM_001320198.2:c.1239G&gt;T; NP_001307127.1:p.Glu413Asp<br><span class="sub">Pipeline: ENST00000293525.5:c.1239G&gt;T; ENSP00000293525.5:p.Glu413Asp</span></td><td>Pathogenic<br><span class="sub">Pipeline: Pathogenic</span></td><td><code>T|KRT86|0.00|0.00|0.00|0.00|-30|-50|-2|-5</code></td><td><span class="badge ok">MATCH</span></td></tr><tr><td>AIS</td><td><code>chrX:67721873 C&gt;T (rs1555997580)</code></td><td>AR<br><span class="sub">Pipeline: AR</span></td><td>stop_gained / HIGH<br><span class="sub">Pipeline: stop_gained / HIGH</span></td><td>NM_000044.6:c.2359C&gt;T; NP_000035.2:p.Arg787Ter<br><span class="sub">Pipeline: ENST00000374690.9:c.2359C&gt;T; ENSP00000363822.3:p.Arg787Ter</span></td><td>Pathogenic<br><span class="sub">Pipeline: Pathogenic</span></td><td><code>T|AR|0.00|0.00|0.00|0.00|22|-40|-41|-30</code></td><td><span class="badge ok">MATCH</span></td></tr><tr><td>NF1</td><td><code>chr17:31230383 G&gt;A (rs267606599)</code></td><td>NF1<br><span class="sub">Pipeline: NF1</span></td><td>splice_donor_variant / HIGH<br><span class="sub">Pipeline: splice_donor_variant / HIGH</span></td><td>NM_001042492.3:c.3113+1G&gt;A; .<br><span class="sub">Pipeline: ENST00000356175.7:c.3113+1G&gt;A; —</span></td><td>Pathogenic<br><span class="sub">Pipeline: Pathogenic</span></td><td><code>A|NF1|0.00|0.00|0.06|1.00|20|-13|20|-1</code></td><td><span class="badge ok">MATCH</span></td></tr></tbody></table></div>
+
+    <p class="sub">
+      The GPT files use compact curated annotation text, while the pipeline files
+      contain fuller transcript-level VEP, SnpEff, ClinVar, and SpliceAI output.
+      Therefore, the INFO fields are not expected to be character-for-character identical.
+    </p>
+  </section>
+
+  <section>
+    <h2>CNV comparison</h2>
+
+    <h3>Whole coordinate-set comparison</h3>
+    <div class="table-wrap"><table><thead><tr><th>Disease</th><th>GPT CNVs</th><th>Pipeline CNVs</th><th>Coordinate/type matches</th><th>Status</th><th>Coordinate note</th></tr></thead><tbody><tr><td>Fabry</td><td>9</td><td>9</td><td>9</td><td><span class="badge ok">MATCH</span></td><td>The pipeline TSV Start is one base lower than VCF POS because the TSV uses a 0-based Start and the VCF uses a 1-based POS.</td></tr><tr><td>Monilethrix</td><td>9</td><td>9</td><td>9</td><td><span class="badge ok">MATCH</span></td><td>The pipeline TSV Start is one base lower than VCF POS because the TSV uses a 0-based Start and the VCF uses a 1-based POS.</td></tr><tr><td>AIS</td><td>9</td><td>9</td><td>9</td><td><span class="badge ok">MATCH</span></td><td>The pipeline TSV Start is one base lower than VCF POS because the TSV uses a 0-based Start and the VCF uses a 1-based POS.</td></tr><tr><td>NF1</td><td>9</td><td>9</td><td>9</td><td><span class="badge ok">MATCH</span></td><td>The pipeline TSV Start is one base lower than VCF POS because the TSV uses a 0-based Start and the VCF uses a 1-based POS.</td></tr></tbody></table></div>
+
+    <h3>Disease-causing CNV interpretation</h3>
+    <div class="table-wrap"><table><thead><tr><th>Disease</th><th>Target gene</th><th>Interval</th><th>AnnotSV</th><th>ClassifyCNV</th><th>Pipeline ISV-CNV</th><th>Core status</th></tr></thead><tbody><tr><td>Fabry</td><td>GLA</td><td><code>chrX:101393273-101408012 DEL</code><br><span class="sub">Pipeline: chrX:101393272-101408012 DEL (0-based Start)</span></td><td>Class 5 / Pathogenic<br><span class="sub">Pipeline: Class 5 / Pathogenic</span></td><td>Pathogenic<br><span class="sub">Pipeline: Pathogenic</span></td><td>0.897 / Below threshold</td><td><span class="badge ok">MATCH</span></td></tr><tr><td>Monilethrix</td><td>DSG4</td><td><code>chr18:31376777-31414979 DEL</code><br><span class="sub">Pipeline: chr18:31376776-31414979 DEL (0-based Start)</span></td><td>Class 5 / Pathogenic<br><span class="sub">Pipeline: Class 5 / Pathogenic</span></td><td>Uncertain_significance<br><span class="sub">Pipeline: Uncertain significance</span></td><td>0.651 / Below threshold</td><td><span class="badge ok">MATCH</span></td></tr><tr><td>AIS</td><td>AR</td><td><code>chrX:67543353-67730619 DEL</code><br><span class="sub">Pipeline: chrX:67543352-67730619 DEL (0-based Start)</span></td><td>Class 5 / Pathogenic<br><span class="sub">Pipeline: Class 5 / Pathogenic</span></td><td>Pathogenic<br><span class="sub">Pipeline: Pathogenic</span></td><td>0.541 / Below threshold</td><td><span class="badge ok">MATCH</span></td></tr><tr><td>NF1</td><td>NF1</td><td><code>chr17:31094883-31382116 DEL</code><br><span class="sub">Pipeline: chr17:31094882-31382116 DEL (0-based Start)</span></td><td>Class 5 / Pathogenic<br><span class="sub">Pipeline: Class 5 / Pathogenic</span></td><td>Pathogenic<br><span class="sub">Pipeline: Pathogenic</span></td><td>0.990 / Above threshold</td><td><span class="badge ok">MATCH</span></td></tr></tbody></table></div>
+
+    <div class="callout ok">
+      All four CNV pairs contain the same 9 CNVs. The apparent one-base difference
+      at the beginning of each interval is expected because VCF POS is 1-based,
+      whereas the pipeline summary uses a BED-style 0-based Start.
+    </div>
+
+    <div class="callout warn">
+      In Monilethrix, AnnotSV and ClassifyCNV disagree on the DSG4 deletion:
+      AnnotSV reports Pathogenic while ClassifyCNV reports Uncertain significance.
+      This is a real difference between tools, not a GPT-versus-pipeline mismatch,
+      because the GPT file records the same tool-level disagreement.
+    </div>
+  </section>
+
+  <section>
+    <h2>Disease-wise conclusions</h2>
+    <ul>
+      <li>
+        <strong>Fabry:</strong> the GLA p.Arg301Gln SNV and the GLA deletion
+        agree between GPT and pipeline.
+      </li>
+      <li>
+        <strong>Monilethrix:</strong> the KRT86 p.Glu413Asp SNV agrees.
+        The DSG4 deletion coordinates agree, including the same AnnotSV-versus-ClassifyCNV disagreement.
+      </li>
+      <li>
+        <strong>AIS:</strong> the AR p.Arg787Ter SNV now matches successfully,
+        and the AR deletion also agrees between GPT and pipeline.
+      </li>
+      <li>
+        <strong>NF1:</strong> the NF1 c.3113+1G&gt;A splice-donor variant agrees,
+        including the pipeline SpliceAI evidence, and the NF1 deletion agrees.
+      </li>
+      <li>
+        <strong>Remaining limitation:</strong> every pipeline SNV VCF contains
+        only 6 of the 19 GPT records, so the full SNV files are mismatching even
+        though the main disease findings agree.
+      </li>
+    </ul>
+  </section>
+
+  <div class="footer">
+    Updated self-contained comparison generated directly from the 16 usable uploaded data files.
+  </div>
+</div>
+</body>
+</html>

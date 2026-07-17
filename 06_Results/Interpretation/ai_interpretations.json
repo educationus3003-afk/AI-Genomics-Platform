@@ -1,0 +1,96 @@
+[
+  {
+    "variant_id": "chr7:117548628:ATT>A",
+    "gene": "CFTR",
+    "disease": "Cystic Fibrosis",
+    "inheritance": "Autosomal recessive",
+    "variant_type": "deletion",
+    "automated_classification": "Not assessed",
+    "acmg_evidence": "Requires manual ACMG review",
+    "annotation_source": "Validated disease demonstration VCF",
+    "gene_summary": "CFTR encodes Cystic fibrosis transmembrane conductance regulator. The primary disease mechanism associated with this case study is: Loss of CFTR chloride and bicarbonate channel function.",
+    "variant_summary": "The detected variant chr7:117548628:ATT>A is a deletion affecting CFTR. The current automated classification is Not assessed.",
+    "disease_summary": "CFTR is associated with Cystic Fibrosis, which is typically inherited in an autosomal recessive pattern.",
+    "clinical_interpretation": "This variant should be interpreted together with the patient's phenotype, inheritance pattern, population frequency, ClinVar status, functional prediction scores, transcript context, and ACMG evidence. Relevant clinical features for Cystic Fibrosis include: Chronic respiratory disease, Recurrent lung infections, Pancreatic insufficiency, Elevated sweat chloride, Male infertility",
+    "acmg_summary": "Automated ACMG evidence: Requires manual ACMG review. This result is decision support only and requires review by a qualified genetics professional.",
+    "patient_friendly_explanation": "A change was detected in the CFTR gene. This gene is linked to Cystic Fibrosis. The result does not by itself confirm a diagnosis and must be considered together with symptoms, family history, and clinical testing.",
+    "validation_focus": [
+      "SNVs",
+      "Indels",
+      "Splice variants",
+      "Genotype-phenotype interpretation"
+    ],
+    "clinical_review_required": true
+  },
+  {
+    "variant_id": "chr11:52469944:C>T",
+    "gene": "HBB",
+    "disease": "Beta Thalassemia",
+    "inheritance": "Autosomal recessive",
+    "variant_type": "single nucleotide variant",
+    "automated_classification": "Not assessed",
+    "acmg_evidence": "Requires manual ACMG review",
+    "annotation_source": "Validated disease demonstration VCF",
+    "gene_summary": "HBB encodes Hemoglobin subunit beta. The primary disease mechanism associated with this case study is: Reduced or absent beta-globin production.",
+    "variant_summary": "The detected variant chr11:52469944:C>T is a single nucleotide variant affecting HBB. The current automated classification is Not assessed.",
+    "disease_summary": "HBB is associated with Beta Thalassemia, which is typically inherited in an autosomal recessive pattern.",
+    "clinical_interpretation": "This variant should be interpreted together with the patient's phenotype, inheritance pattern, population frequency, ClinVar status, functional prediction scores, transcript context, and ACMG evidence. Relevant clinical features for Beta Thalassemia include: Microcytic hypochromic anemia, Fatigue, Splenomegaly, Bone changes, Iron overload in severe disease",
+    "acmg_summary": "Automated ACMG evidence: Requires manual ACMG review. This result is decision support only and requires review by a qualified genetics professional.",
+    "patient_friendly_explanation": "A change was detected in the HBB gene. This gene is linked to Beta Thalassemia. The result does not by itself confirm a diagnosis and must be considered together with symptoms, family history, and clinical testing.",
+    "validation_focus": [
+      "Missense variants",
+      "Nonsense variants",
+      "Promoter variants",
+      "Splice variants",
+      "Local clinical relevance"
+    ],
+    "clinical_review_required": true
+  },
+  {
+    "variant_id": "chrX:154030948:G>A",
+    "gene": "MECP2",
+    "disease": "Rett Syndrome",
+    "inheritance": "X-linked dominant",
+    "variant_type": "single nucleotide variant",
+    "automated_classification": "Not assessed",
+    "acmg_evidence": "Requires manual ACMG review",
+    "annotation_source": "Validated disease demonstration VCF",
+    "gene_summary": "MECP2 encodes Methyl-CpG-binding protein 2. The primary disease mechanism associated with this case study is: Disruption of transcriptional regulation and neuronal development.",
+    "variant_summary": "The detected variant chrX:154030948:G>A is a single nucleotide variant affecting MECP2. The current automated classification is Not assessed.",
+    "disease_summary": "MECP2 is associated with Rett Syndrome, which is typically inherited in an x-linked dominant pattern.",
+    "clinical_interpretation": "This variant should be interpreted together with the patient's phenotype, inheritance pattern, population frequency, ClinVar status, functional prediction scores, transcript context, and ACMG evidence. Relevant clinical features for Rett Syndrome include: Developmental regression, Loss of purposeful hand movements, Stereotypic hand movements, Impaired speech, Seizures, Abnormal breathing",
+    "acmg_summary": "Automated ACMG evidence: Requires manual ACMG review. This result is decision support only and requires review by a qualified genetics professional.",
+    "patient_friendly_explanation": "A change was detected in the MECP2 gene. This gene is linked to Rett Syndrome. The result does not by itself confirm a diagnosis and must be considered together with symptoms, family history, and clinical testing.",
+    "validation_focus": [
+      "X-linked interpretation",
+      "Missense variants",
+      "Nonsense variants",
+      "Frameshift variants",
+      "Phenotype matching"
+    ],
+    "clinical_review_required": true
+  },
+  {
+    "variant_id": "chr15:48520716:G>A",
+    "gene": "FBN1",
+    "disease": "Marfan Syndrome",
+    "inheritance": "Autosomal dominant",
+    "variant_type": "single nucleotide variant",
+    "automated_classification": "Not assessed",
+    "acmg_evidence": "Requires manual ACMG review",
+    "annotation_source": "Validated disease demonstration VCF",
+    "gene_summary": "FBN1 encodes Fibrillin-1. The primary disease mechanism associated with this case study is: Abnormal extracellular microfibrils and dysregulated TGF-beta signalling.",
+    "variant_summary": "The detected variant chr15:48520716:G>A is a single nucleotide variant affecting FBN1. The current automated classification is Not assessed.",
+    "disease_summary": "FBN1 is associated with Marfan Syndrome, which is typically inherited in an autosomal dominant pattern.",
+    "clinical_interpretation": "This variant should be interpreted together with the patient's phenotype, inheritance pattern, population frequency, ClinVar status, functional prediction scores, transcript context, and ACMG evidence. Relevant clinical features for Marfan Syndrome include: Aortic root dilatation, Ectopia lentis, Long limbs and fingers, Skeletal abnormalities, Cardiovascular complications",
+    "acmg_summary": "Automated ACMG evidence: Requires manual ACMG review. This result is decision support only and requires review by a qualified genetics professional.",
+    "patient_friendly_explanation": "A change was detected in the FBN1 gene. This gene is linked to Marfan Syndrome. The result does not by itself confirm a diagnosis and must be considered together with symptoms, family history, and clinical testing.",
+    "validation_focus": [
+      "Missense variants",
+      "Cysteine-altering variants",
+      "Protein-domain interpretation",
+      "Dominant inheritance"
+    ],
+    "clinical_review_required": true
+  }
+]

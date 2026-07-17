@@ -1,0 +1,1 @@
+WARNING: line 1 skipped (11 5227002 rs334 T A . PASS GENE=HBB;DISEASE=S...): Chromosome 11 not found in annotation sources or synonyms; chromosome 11 does not overlap any features

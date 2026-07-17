@@ -1,0 +1,1 @@
+WARNING: line 1 skipped (7 117587778 rs113993959 G T . PASS GENE=CFTR;D...): Chromosome 7 not found in annotation sources or synonyms; chromosome 7 does not overlap any features

@@ -1,0 +1,20 @@
+CNV WORKFLOW STATUS
+
+Implemented:
+- CNV BED input validation
+- DEL/DUP validation
+- CNV size calculation
+- Tool availability detection
+- CSV export
+- JSON export
+- HTML report
+- Research-use warning
+
+External setup required:
+- AnnotSV
+- ClassifyCNV
+- ISV-CNV
+- ClinGen CNV evidence
+
+These tools were not reported as executed. The project provides a
+transparent integration framework for future installation and connection.

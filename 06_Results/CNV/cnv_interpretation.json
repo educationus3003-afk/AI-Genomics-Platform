@@ -1,0 +1,118 @@
+{
+  "input_file": "/root/AI_Genomics_Platform/04_Data/Test/CNV/sample_cnv.bed",
+  "cnv_count": 4,
+  "cnvs": [
+    {
+      "CHROM": "7",
+      "START": 117400000,
+      "END": 117700000,
+      "CNV_TYPE": "DEL",
+      "SAMPLE": "CFTR_CNV_Demo",
+      "CNV_SIZE_BP": 300000,
+      "CNV_ID": "chr7:117400000-117700000:DEL",
+      "AnnotSV_Status": "Not executed",
+      "ClassifyCNV_Status": "Not executed",
+      "ISV_CNV_Status": "Not executed",
+      "ClinGen_Status": "Manual review required",
+      "Automated_CNV_Classification": "Unclassified \u2014 external evidence required",
+      "Interpretation_Note": "CNV requires gene-content, dosage-sensitivity, population-frequency and phenotype review."
+    },
+    {
+      "CHROM": "11",
+      "START": 5220000,
+      "END": 5260000,
+      "CNV_TYPE": "DUP",
+      "SAMPLE": "HBB_CNV_Demo",
+      "CNV_SIZE_BP": 40000,
+      "CNV_ID": "chr11:5220000-5260000:DUP",
+      "AnnotSV_Status": "Not executed",
+      "ClassifyCNV_Status": "Not executed",
+      "ISV_CNV_Status": "Not executed",
+      "ClinGen_Status": "Manual review required",
+      "Automated_CNV_Classification": "Unclassified \u2014 external evidence required",
+      "Interpretation_Note": "CNV requires gene-content, dosage-sensitivity, population-frequency and phenotype review."
+    },
+    {
+      "CHROM": "15",
+      "START": 48400000,
+      "END": 48600000,
+      "CNV_TYPE": "DEL",
+      "SAMPLE": "FBN1_CNV_Demo",
+      "CNV_SIZE_BP": 200000,
+      "CNV_ID": "chr15:48400000-48600000:DEL",
+      "AnnotSV_Status": "Not executed",
+      "ClassifyCNV_Status": "Not executed",
+      "ISV_CNV_Status": "Not executed",
+      "ClinGen_Status": "Manual review required",
+      "Automated_CNV_Classification": "Unclassified \u2014 external evidence required",
+      "Interpretation_Note": "CNV requires gene-content, dosage-sensitivity, population-frequency and phenotype review."
+    },
+    {
+      "CHROM": "X",
+      "START": 153000000,
+      "END": 154000000,
+      "CNV_TYPE": "DUP",
+      "SAMPLE": "MECP2_CNV_Demo",
+      "CNV_SIZE_BP": 1000000,
+      "CNV_ID": "chrX:153000000-154000000:DUP",
+      "AnnotSV_Status": "Not executed",
+      "ClassifyCNV_Status": "Not executed",
+      "ISV_CNV_Status": "Not executed",
+      "ClinGen_Status": "Manual review required",
+      "Automated_CNV_Classification": "Unclassified \u2014 external evidence required",
+      "Interpretation_Note": "CNV requires gene-content, dosage-sensitivity, population-frequency and phenotype review."
+    }
+  ],
+  "tools": [
+    {
+      "tool": "AnnotSV",
+      "executables": [
+        "AnnotSV",
+        "annotSV"
+      ],
+      "purpose": "Structural-variant annotation",
+      "expected_input": "BED or SV-VCF",
+      "expected_output": "Annotated TSV",
+      "installed": false,
+      "executable_path": "Not detected",
+      "integration_status": "Documented integration; external setup required"
+    },
+    {
+      "tool": "ClassifyCNV",
+      "executables": [
+        "ClassifyCNV",
+        "classifycnv"
+      ],
+      "purpose": "ACMG/ClinGen CNV classification",
+      "expected_input": "BED",
+      "expected_output": "Classification and evidence table",
+      "installed": false,
+      "executable_path": "Not detected",
+      "integration_status": "Documented integration; external setup required"
+    },
+    {
+      "tool": "ISV-CNV",
+      "executables": [
+        "isvcnv",
+        "ISV-CNV"
+      ],
+      "purpose": "CNV interpretation support",
+      "expected_input": "CNV coordinates and annotations",
+      "expected_output": "Interpretation evidence",
+      "installed": false,
+      "executable_path": "Not detected",
+      "integration_status": "Documented integration; external setup required"
+    },
+    {
+      "tool": "ClinGen CNV",
+      "executables": [],
+      "purpose": "Dosage sensitivity and CNV evidence",
+      "expected_input": "CNV region",
+      "expected_output": "Manual or API-derived evidence",
+      "installed": false,
+      "executable_path": "Not detected",
+      "integration_status": "Documented integration; external setup required"
+    }
+  ],
+  "warning": "Research-use output. CNV interpretation requires professional review."
+}

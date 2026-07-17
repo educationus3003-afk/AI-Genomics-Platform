@@ -1,0 +1,5 @@
+VARIANT_ID,CHROM,POS,REF,ALT,GENE,INTERVAR_CLASSIFICATION,ACMG_EVIDENCE,SOURCE
+chr7:117548628:ATT>A,7,117548628,ATT,A,CFTR,Not assessed,Requires manual ACMG review,Validated disease demonstration VCF
+chr11:52469944:C>T,11,52469944,C,T,HBB,Not assessed,Requires manual ACMG review,Validated disease demonstration VCF
+chrX:154030948:G>A,X,154030948,G,A,MECP2,Not assessed,Requires manual ACMG review,Validated disease demonstration VCF
+chr15:48520716:G>A,15,48520716,G,A,FBN1,Not assessed,Requires manual ACMG review,Validated disease demonstration VCF

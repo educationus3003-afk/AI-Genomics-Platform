@@ -1,0 +1,9 @@
+CHROM	POS	ID	GENE	CONSEQUENCE	HGVSC	HGVSP	CLINVAR	GNOMAD_AF	CADD	REVEL	ALPHAMISSENSE	OMIM
+1	94458393	rs80338939	ABCD3	missense_variant	NM_001122.4:c.2003G>A	NM_001122.4:p.(Arg668His)	Uncertain_significance	3e-06	28.4	0.823	0.891	Zellweger_spectrum_disorder
+13	32339421	rs28897743	BRCA2	missense_variant	NM_000059.4:c.8023A>G	NM_000059.4:p.(Arg2675Gly)	Pathogenic	1e-06	31.2	0.964	0.962	Hereditary_breast_and_ovarian_cancer
+7	117548628	rs113993960	CFTR	frameshift_variant	NM_000492.4:c.1521_1523delCTT	NM_000492.4:p.(Phe508del)	Pathogenic	0.021	35	.	.	Cystic_fibrosis
+2	179443144	.	SCN1A	stop_gained	NM_006920.6:c.4117C>T	NM_006920.6:p.(Arg1373Ter)	not_in_ClinVar	0	40	.	.	Dravet_syndrome
+19	41121935	rs429358	APOE	missense_variant	NM_000041.4:c.388T>C	NM_000041.4:p.(Cys130Arg)	Likely_benign	0.152	12.1	0.211	0.093	Alzheimer_disease_susceptibility
+11	5246944	rs33950507	HBB	missense_variant	NM_000518.5:c.17A>T	NM_000518.5:p.(Glu6Val)	Pathogenic	0.001	29.8	0.987	0.978	Sickle_cell_disease
+17	43057051	rs80357382	BRCA1	splice_donor_variant	NM_007294.4:c.5467+1G>A	NM_007294.4:p.?	Pathogenic	0	33.5	.	.	Hereditary_breast_and_ovarian_cancer
+12	103234189	.	MYO7A	missense_variant	NM_000260.4:c.5944G>A	NM_000260.4:p.(Gly1982Arg)	Uncertain_significance	9e-06	24.1	0.612	0.544	Usher_syndrome_type_1

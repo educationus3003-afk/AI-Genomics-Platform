@@ -1,0 +1,16 @@
+##fileformat=VCFv4.2
+##FILTER=<ID=PASS,Description="All filters passed">
+##reference=GRCh38
+##contig=<ID=11>
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=DISEASE,Number=1,Type=String,Description="Target disease">
+##INFO=<ID=TRANSCRIPT_HGVS,Number=1,Type=String,Description="Transcript HGVS">
+##INFO=<ID=PROTEIN_HGVS,Number=1,Type=String,Description="Protein HGVS">
+##bcftools_normVersion=1.21+htslib-1.21
+##bcftools_normCommand=norm -f 04_Data/Reference/hg38.fa -c x -m -any -Oz -o 06_Results/HBB/normalized.vcf.gz 06_Results/HBB/input.vcf; Date=Thu Jul 16 11:41:45 2026
+##bcftools_annotateVersion=1.21+htslib-1.21
+##bcftools_annotateCommand=annotate --rename-chrs 04_Data/Reference/ucsc_to_ensembl_chromosomes.txt -Oz -o 06_Results/HBB/normalized_ensembl.vcf.gz 06_Results/HBB/normalized.vcf.gz; Date=Thu Jul 16 12:10:05 2026
+##VEP="v116.0" API="v116" time="2026-07-16 12:14:37" cache="04_Data/VEP_cache/homo_sapiens/116_GRCh38" ensembl=116.c0cf13d ensembl-compara=116.46f80af ensembl-funcgen=116.90049ea ensembl-io=116.6afb5dc ensembl-variation=116.2fb834b
+##INFO=<ID=CSQ,Number=.,Type=String,Description="Consequence annotations from Ensembl VEP. Format: Allele|Consequence|IMPACT|SYMBOL|Gene|Feature_type|Feature|BIOTYPE|EXON|INTRON|HGVSc|HGVSp|cDNA_position|CDS_position|Protein_position|Amino_acids|Codons|Existing_variation|DISTANCE|STRAND|FLAGS|VARIANT_CLASS|SYMBOL_SOURCE|HGNC_ID|CANONICAL|MANE|MANE_SELECT|MANE_PLUS_CLINICAL|ENSP|HGVS_OFFSET|CLIN_SIG|SOMATIC|PHENO">
+##VEP-command-line='vep --assembly GRCh38 --biotype --cache --canonical --check_existing --database 0 --dir_cache [PATH]/VEP_cache --fasta [PATH]/GRCh38_ensembl.fa --force_overwrite --format vcf --hgvs --input_file [PATH]/normalized_ensembl.vcf.gz --mane --offline --output_file [PATH]/vep.vcf --pick --protein --symbol --variant_class --vcf'
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO

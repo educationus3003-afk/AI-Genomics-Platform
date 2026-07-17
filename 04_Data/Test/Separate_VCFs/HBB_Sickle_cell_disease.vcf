@@ -1,0 +1,5 @@
+##fileformat=VCFv4.2
+##reference=GRCh38
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+11	5246944	.	C	T	.	PASS	GENE=HBB

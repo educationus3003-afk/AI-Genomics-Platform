@@ -1,0 +1,217 @@
+## ENSEMBL VARIANT EFFECT PREDICTOR v116.0
+## Output produced at 2026-07-14 13:27:56
+## Using cache in /mnt/d/VEP_cache/homo_sapiens/116_GRCh38
+## Using API version 116, DB version ?
+## ensembl version 116.c0cf13d
+## ensembl-compara version 116.46f80af
+## ensembl-funcgen version 116.90049ea
+## ensembl-io version 116.6afb5dc
+## ensembl-variation version 116.2fb834b
+## 1000genomes version phase3
+## COSMIC version 102
+## ClinVar version 202509
+## HGMD-PUBLIC version 20204
+## assembly version GRCh38.p14
+## dbSNP version 156
+## gencode version GENCODE 50
+## genebuild version GENCODE50
+## gnomADe version v4.1
+## gnomADg version v4.1
+## polyphen version 2.2.3
+## regbuild version 1.0
+## sift version 6.2.1
+## Column descriptions:
+## Uploaded_variation : Identifier of uploaded variant
+## Location : Location of variant in standard coordinate format (chr:start or chr:start-end)
+## Allele : The variant allele used to calculate the consequence
+## Gene : Stable ID of affected gene
+## Feature : Stable ID of feature
+## Feature_type : Type of feature - Transcript, RegulatoryFeature or MotifFeature
+## Consequence : Consequence type
+## cDNA_position : Relative position of base pair in cDNA sequence
+## CDS_position : Relative position of base pair in coding sequence
+## Protein_position : Relative position of amino acid in protein
+## Amino_acids : Reference and variant amino acids
+## Codons : Reference and variant codon sequence
+## Existing_variation : Identifier(s) of co-located known variants
+## IMPACT : Subjective impact classification of consequence type
+## DISTANCE : Shortest distance from variant to transcript
+## STRAND : Strand of the feature (1/-1)
+## FLAGS : Transcript quality flags
+## VARIANT_CLASS : SO variant class
+## SYMBOL : Gene symbol (e.g. HGNC)
+## SYMBOL_SOURCE : Source of gene symbol
+## HGNC_ID : Stable identifer of HGNC gene symbol
+## CANONICAL : Indicates if transcript is canonical for this gene
+## VEP command-line: vep --assembly GRCh38 --cache --cache_version 116 --canonical --database 0 --dir_cache [PATH]/VEP_cache --force_overwrite --format vcf --input_file [PATH]/sample_input.vcf --offline --output_file [PATH]/sample_vep_table.txt --symbol --synonyms [PATH]/chr_synonyms.txt --tab --variant_class
+#Uploaded_variation	Location	Allele	Gene	Feature	Feature_type	Consequence	cDNA_position	CDS_position	Protein_position	Amino_acids	Codons	Existing_variation	IMPACT	DISTANCE	STRAND	FLAGS	VARIANT_CLASS	SYMBOL	SYMBOL_SOURCE	HGNC_ID	CANONICAL
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000315713	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000370214	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	YES
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000468860	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000647998	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000866889	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000866890	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000866891	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000866892	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000866893	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000866894	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000866895	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000866896	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000866897	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000866898	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000917833	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000966692	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000966693	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000966694	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000966695	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000966696	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000966697	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000966698	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000966699	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000966700	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000966701	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000984917	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000984918	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000984919	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000984920	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000984921	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00000984922	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00001035821	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00001035822	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00001035823	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00001035824	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00001035826	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00001035827	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00001035828	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00001035830	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00001084408	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00001098056	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs80338939	1:94458393	T	ENSG00000117528	ENST00001144755	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	ABCD3	HGNC	HGNC:67	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000380152	Transcript	missense_variant	5265	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	YES
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000470094	Transcript	missense_variant,NMD_transcript_variant	5265	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000528762	Transcript	missense_variant,NMD_transcript_variant	5265	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000530893	Transcript	missense_variant	5264	4697	1566	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000544455	Transcript	missense_variant	5165	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000614259	Transcript	missense_variant,NMD_transcript_variant	5066	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000665585	Transcript	missense_variant,NMD_transcript_variant	5265	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000666593	Transcript	missense_variant,NMD_transcript_variant	5265	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000680887	Transcript	missense_variant	5191	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000700202	Transcript	missense_variant	5277	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000713677	Transcript	3_prime_UTR_variant,NMD_transcript_variant	5273	-	-	-	-	-	MODIFIER	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000713678	Transcript	missense_variant	5277	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000713679	Transcript	missense_variant,NMD_transcript_variant	5265	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs28897743	13:32339421	G	ENSG00000139618	ENST00000713680	Transcript	missense_variant	5277	5066	1689	A/G	gCa/gGa	-	MODERATE	-	1	-	SNV	BRCA2	HGNC	HGNC:1101	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000003084	Transcript	splice_polypyrimidine_tract_variant,intron_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	YES
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000426809	Transcript	splice_polypyrimidine_tract_variant,intron_variant	-	-	-	-	-	-	LOW	-	1	cds_end_NF	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000647720	Transcript	splice_polypyrimidine_tract_variant,intron_variant,NMD_transcript_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000647978	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000648260	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000649406	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000649781	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000673785	Transcript	splice_polypyrimidine_tract_variant,intron_variant	-	-	-	-	-	-	LOW	-	1	cds_end_NF	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000685018	Transcript	splice_polypyrimidine_tract_variant,intron_variant,NMD_transcript_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000687278	Transcript	splice_polypyrimidine_tract_variant,intron_variant,NMD_transcript_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000699585	Transcript	splice_polypyrimidine_tract_variant,intron_variant,NMD_transcript_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000699596	Transcript	splice_polypyrimidine_tract_variant,intron_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000699597	Transcript	splice_polypyrimidine_tract_variant,intron_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000699598	Transcript	splice_polypyrimidine_tract_variant,intron_variant,NMD_transcript_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000699599	Transcript	splice_polypyrimidine_tract_variant,intron_variant,NMD_transcript_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000699600	Transcript	splice_polypyrimidine_tract_variant,intron_variant,NMD_transcript_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000699601	Transcript	splice_polypyrimidine_tract_variant,intron_variant,NMD_transcript_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000699602	Transcript	splice_polypyrimidine_tract_variant,intron_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000699604	Transcript	splice_polypyrimidine_tract_variant,intron_variant,NMD_transcript_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000699605	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000889206	Transcript	splice_polypyrimidine_tract_variant,intron_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000889207	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000889208	Transcript	splice_polypyrimidine_tract_variant,intron_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000889209	Transcript	splice_polypyrimidine_tract_variant,intron_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000889210	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00000950799	Transcript	splice_polypyrimidine_tract_variant,intron_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+rs113993960	7:117548629-117548630	-	ENSG00000001626	ENST00001140285	Transcript	splice_polypyrimidine_tract_variant,intron_variant	-	-	-	-	-	-	LOW	-	1	-	deletion	CFTR	HGNC	HGNC:1884	-
+2_179443144_G/A	2:179443144	A	ENSG00000144331	ENST00000336917	Transcript	3_prime_UTR_variant	1459	-	-	-	-	-	MODIFIER	-	-1	-	SNV	ZNF385B	HGNC	HGNC:26332	-
+2_179443144_G/A	2:179443144	A	ENSG00000144331	ENST00000409343	Transcript	3_prime_UTR_variant	1599	-	-	-	-	-	MODIFIER	-	-1	-	SNV	ZNF385B	HGNC	HGNC:26332	-
+2_179443144_G/A	2:179443144	A	ENSG00000144331	ENST00000409692	Transcript	3_prime_UTR_variant	1516	-	-	-	-	-	MODIFIER	-	-1	-	SNV	ZNF385B	HGNC	HGNC:26332	-
+2_179443144_G/A	2:179443144	A	ENSG00000144331	ENST00000410066	Transcript	3_prime_UTR_variant	2233	-	-	-	-	-	MODIFIER	-	-1	-	SNV	ZNF385B	HGNC	HGNC:26332	YES
+2_179443144_G/A	2:179443144	A	ENSG00000144331	ENST00000457304	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	2406	-1	cds_end_NF	SNV	ZNF385B	HGNC	HGNC:26332	-
+2_179443144_G/A	2:179443144	A	ENSG00000144331	ENST00000466398	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	-1	-	SNV	ZNF385B	HGNC	HGNC:26332	-
+2_179443144_G/A	2:179443144	A	ENSG00000144331	ENST00000469551	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	2464	-1	-	SNV	ZNF385B	HGNC	HGNC:26332	-
+2_179443144_G/A	2:179443144	A	ENSG00000144331	ENST00000475539	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	3490	-1	-	SNV	ZNF385B	HGNC	HGNC:26332	-
+2_179443144_G/A	2:179443144	A	ENSG00000144331	ENST00001036524	Transcript	3_prime_UTR_variant,NMD_transcript_variant	2152	-	-	-	-	-	MODIFIER	-	-1	-	SNV	ZNF385B	HGNC	HGNC:26332	-
+2_179443144_G/A	2:179443144	A	ENSG00000144331	ENST00001137098	Transcript	3_prime_UTR_variant	2238	-	-	-	-	-	MODIFIER	-	-1	-	SNV	ZNF385B	HGNC	HGNC:26332	-
+rs429358	19:41121935	C	ENSG00000197446	ENST00000331105	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	CYP2F1	HGNC	HGNC:2632	YES
+rs429358	19:41121935	C	ENSG00000197446	ENST00000439903	Transcript	upstream_gene_variant	-	-	-	-	-	-	MODIFIER	2920	1	cds_start_NF	SNV	CYP2F1	HGNC	HGNC:2632	-
+rs429358	19:41121935	C	ENSG00000197446	ENST00000526093	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	CYP2F1	HGNC	HGNC:2632	-
+rs429358	19:41121935	C	ENSG00000197446	ENST00000531409	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	CYP2F1	HGNC	HGNC:2632	-
+rs429358	19:41121935	C	ENSG00000197446	ENST00000532164	Transcript	intron_variant,NMD_transcript_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	CYP2F1	HGNC	HGNC:2632	-
+rs429358	19:41121935	C	ENSG00000197446	ENST00000534009	Transcript	upstream_gene_variant	-	-	-	-	-	-	MODIFIER	2783	1	cds_start_NF	SNV	CYP2F1	HGNC	HGNC:2632	-
+rs429358	19:41121935	C	ENSG00000301056	ENST00000775808	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	-1	-	SNV	-	-	-	YES
+rs429358	19:41121935	C	ENSG00000301056	ENST00000775809	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	-1	-	SNV	-	-	-	-
+rs429358	19:41121935	C	ENSG00000301056	ENST00000775810	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	-1	-	SNV	-	-	-	-
+rs429358	19:41121935	C	ENSG00000301056	ENST00000775814	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	-1	-	SNV	-	-	-	-
+rs429358	19:41121935	C	ENSG00000197446	ENST00000903858	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	CYP2F1	HGNC	HGNC:2632	-
+rs429358	19:41121935	C	ENSG00000197446	ENST00000903859	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	CYP2F1	HGNC	HGNC:2632	-
+rs429358	19:41121935	C	ENSG00000197446	ENST00001117250	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	1	-	SNV	CYP2F1	HGNC	HGNC:2632	-
+rs33950507	11:5246944	T	ENSG00000213934	ENST00000330597	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	1325	-1	-	SNV	HBG1	HGNC	HGNC:4831	YES
+rs33950507	11:5246944	T	ENSG00000229988	ENST00000433329	Transcript	upstream_gene_variant	-	-	-	-	-	-	MODIFIER	3407	-1	-	SNV	HBBP1	HGNC	HGNC:4828	YES
+rs33950507	11:5246944	T	ENSG00000290652	ENST00000454892	Transcript	upstream_gene_variant	-	-	-	-	-	-	MODIFIER	3411	-1	-	SNV	-	-	-	-
+rs33950507	11:5246944	T	ENSG00000260629	ENST00000564523	Transcript	upstream_gene_variant	-	-	-	-	-	-	MODIFIER	1398	-1	-	SNV	BGLT3	HGNC	HGNC:49033	YES
+rs33950507	11:5246944	T	ENSG00000213934	ENST00000632727	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	1484	-1	-	SNV	HBG1	HGNC	HGNC:4831	-
+rs33950507	11:5246944	T	ENSG00000223609	ENST00000643122	Transcript	upstream_gene_variant	-	-	-	-	-	-	MODIFIER	3287	-1	-	SNV	HBD	HGNC	HGNC:4829	-
+rs33950507	11:5246944	T	ENSG00000213934	ENST00000648735	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	1326	-1	-	SNV	HBG1	HGNC	HGNC:4831	-
+rs33950507	11:5246944	T	ENSG00000298932	ENST00000759072	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	3765	1	-	SNV	-	-	-	YES
+rs33950507	11:5246944	T	ENSG00000290652	ENST00000759251	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	-1	-	SNV	-	-	-	YES
+rs33950507	11:5246944	T	ENSG00000290652	ENST00000759252	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	-1	-	SNV	-	-	-	-
+rs33950507	11:5246944	T	ENSG00000290652	ENST00000759253	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	-1	-	SNV	-	-	-	-
+rs33950507	11:5246944	T	ENSG00000290652	ENST00000759254	Transcript	intron_variant,non_coding_transcript_variant	-	-	-	-	-	-	MODIFIER	-	-1	-	SNV	-	-	-	-
+rs33950507	11:5246944	T	ENSG00000223609	ENST00001098641	Transcript	upstream_gene_variant	-	-	-	-	-	-	MODIFIER	3246	-1	-	SNV	HBD	HGNC	HGNC:4829	-
+rs33950507	11:5246944	T	ENSG00000213934	ENST00001098757	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	1260	-1	-	SNV	HBG1	HGNC	HGNC:4831	-
+rs33950507	11:5246944	T	ENSG00000213934	ENST00001098758	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	1260	-1	-	SNV	HBG1	HGNC	HGNC:4831	-
+rs33950507	11:5246944	T	ENSG00000213934	ENST00001098759	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	1260	-1	-	SNV	HBG1	HGNC	HGNC:4831	-
+rs33950507	11:5246944	T	ENSG00000213934	ENST00001098760	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	1327	-1	-	SNV	HBG1	HGNC	HGNC:4831	-
+rs33950507	11:5246944	T	ENSG00000213934	ENST00001098761	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	1327	-1	-	SNV	HBG1	HGNC	HGNC:4831	-
+rs33950507	11:5246944	T	ENSG00000213934	ENST00001143429	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	1260	-1	-	SNV	HBG1	HGNC	HGNC:4831	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000352993	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000357654	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	YES
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000461221	Transcript	splice_donor_variant,NMD_transcript_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000461574	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000468300	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000470026	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000471181	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000473961	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000476777	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000477152	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000478531	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000484087	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000489037	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000491747	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000493795	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000493919	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000494123	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000497488	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000586385	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000591534	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000591849	Transcript	intron_variant	-	-	-	-	-	-	MODIFIER	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000618469	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000634433	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000644379	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000644555	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000652672	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000713676	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000899954	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000921914	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000921915	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000921916	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000945268	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00000945269	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00001010568	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00001010569	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00001076718	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00001076719	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00001076720	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00001076721	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00001076722	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00001076723	Transcript	splice_donor_variant,NMD_transcript_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00001076724	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00001076725	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+rs80357382	17:43057051	A	ENSG00000012048	ENST00001136804	Transcript	splice_donor_variant	-	-	-	-	-	-	HIGH	-	-1	-	SNV	BRCA1	HGNC	HGNC:1100	-
+12_103234189_C/T	12:103234189	T	ENSG00000179088	ENST00000547347	Transcript	downstream_gene_variant	-	-	-	-	-	-	MODIFIER	3402	-1	-	SNV	C12orf42	HGNC	HGNC:24729	-

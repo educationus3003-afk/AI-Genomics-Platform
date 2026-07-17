@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>GeneInsightAI CNV Report</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: #f5f7fa;
+    color: #1f2937;
+}
+.container {
+    max-width: 1500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+}
+h1, h2 {
+    color: #17365d;
+}
+.notice {
+    padding: 14px;
+    background: #fff4ce;
+    border-left: 5px solid #d69e00;
+    margin-bottom: 24px;
+}
+.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+.data-table th,
+.data-table td {
+    border: 1px solid #d1d5db;
+    padding: 8px;
+    text-align: left;
+}
+.data-table th {
+    background: #17365d;
+    color: white;
+}
+.data-table tr:nth-child(even) {
+    background: #f3f4f6;
+}
+.footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #6b7280;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>GeneInsightAI CNV Interpretation Report</h1>
+
+<div class="notice">
+<strong>Research-use notice:</strong>
+The workflow records tool availability and prepares CNVs for
+interpretation. A qualified genetics professional must review
+all classifications.
+</div>
+
+<h2>CNV Input Summary</h2>
+<p>Total CNVs: <strong>4</strong></p>
+<table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>CHROM</th>
+      <th>START</th>
+      <th>END</th>
+      <th>CNV_TYPE</th>
+      <th>SAMPLE</th>
+      <th>CNV_SIZE_BP</th>
+      <th>CNV_ID</th>
+      <th>AnnotSV_Status</th>
+      <th>ClassifyCNV_Status</th>
+      <th>ISV_CNV_Status</th>
+      <th>ClinGen_Status</th>
+      <th>Automated_CNV_Classification</th>
+      <th>Interpretation_Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7</td>
+      <td>117400000</td>
+      <td>117700000</td>
+      <td>DEL</td>
+      <td>CFTR_CNV_Demo</td>
+      <td>300000</td>
+      <td>chr7:117400000-117700000:DEL</td>
+      <td>Not executed</td>
+      <td>Not executed</td>
+      <td>Not executed</td>
+      <td>Manual review required</td>
+      <td>Unclassified — external evidence required</td>
+      <td>CNV requires gene-content, dosage-sensitivity, population-frequency and phenotype review.</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>5220000</td>
+      <td>5260000</td>
+      <td>DUP</td>
+      <td>HBB_CNV_Demo</td>
+      <td>40000</td>
+      <td>chr11:5220000-5260000:DUP</td>
+      <td>Not executed</td>
+      <td>Not executed</td>
+      <td>Not executed</td>
+      <td>Manual review required</td>
+      <td>Unclassified — external evidence required</td>
+      <td>CNV requires gene-content, dosage-sensitivity, population-frequency and phenotype review.</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>48400000</td>
+      <td>48600000</td>
+      <td>DEL</td>
+      <td>FBN1_CNV_Demo</td>
+      <td>200000</td>
+      <td>chr15:48400000-48600000:DEL</td>
+      <td>Not executed</td>
+      <td>Not executed</td>
+      <td>Not executed</td>
+      <td>Manual review required</td>
+      <td>Unclassified — external evidence required</td>
+      <td>CNV requires gene-content, dosage-sensitivity, population-frequency and phenotype review.</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>153000000</td>
+      <td>154000000</td>
+      <td>DUP</td>
+      <td>MECP2_CNV_Demo</td>
+      <td>1000000</td>
+      <td>chrX:153000000-154000000:DUP</td>
+      <td>Not executed</td>
+      <td>Not executed</td>
+      <td>Not executed</td>
+      <td>Manual review required</td>
+      <td>Unclassified — external evidence required</td>
+      <td>CNV requires gene-content, dosage-sensitivity, population-frequency and phenotype review.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>CNV Tool Integration Status</h2>
+<table class="dataframe data-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>tool</th>
+      <th>executables</th>
+      <th>purpose</th>
+      <th>expected_input</th>
+      <th>expected_output</th>
+      <th>installed</th>
+      <th>executable_path</th>
+      <th>integration_status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AnnotSV</td>
+      <td>[AnnotSV, annotSV]</td>
+      <td>Structural-variant annotation</td>
+      <td>BED or SV-VCF</td>
+      <td>Annotated TSV</td>
+      <td>False</td>
+      <td>Not detected</td>
+      <td>Documented integration; external setup required</td>
+    </tr>
+    <tr>
+      <td>ClassifyCNV</td>
+      <td>[ClassifyCNV, classifycnv]</td>
+      <td>ACMG/ClinGen CNV classification</td>
+      <td>BED</td>
+      <td>Classification and evidence table</td>
+      <td>False</td>
+      <td>Not detected</td>
+      <td>Documented integration; external setup required</td>
+    </tr>
+    <tr>
+      <td>ISV-CNV</td>
+      <td>[isvcnv, ISV-CNV]</td>
+      <td>CNV interpretation support</td>
+      <td>CNV coordinates and annotations</td>
+      <td>Interpretation evidence</td>
+      <td>False</td>
+      <td>Not detected</td>
+      <td>Documented integration; external setup required</td>
+    </tr>
+    <tr>
+      <td>ClinGen CNV</td>
+      <td>[]</td>
+      <td>Dosage sensitivity and CNV evidence</td>
+      <td>CNV region</td>
+      <td>Manual or API-derived evidence</td>
+      <td>False</td>
+      <td>Not detected</td>
+      <td>Documented integration; external setup required</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Workflow</h2>
+<p>
+CNV BED/SV-VCF → AnnotSV → ClassifyCNV → ISV-CNV →
+ClinGen evidence → CNV interpretation report
+</p>
+
+<div class="footer">
+Generated by GeneInsightAI CNV branch.
+Unavailable external tools are reported honestly and no
+pathogenicity evidence is fabricated.
+</div>
+
+</div>
+</body>
+</html>

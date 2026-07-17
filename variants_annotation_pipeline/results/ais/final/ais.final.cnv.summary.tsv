@@ -1,0 +1,10 @@
+Chromosome	Start	End	Type	Gene_count	AnnotSV_ranking_score	AnnotSV_ACMG_class	AnnotSV_classification	ClassifyCNV_classification	ClassifyCNV_total_score	ISV_probability	ISV_threshold_0.95
+chr1	18399999	18442000	DUP	0	-0.6	3	VUS	Uncertain significance	0.00	0.0084927007555961	Below threshold
+chr12	47299999	47365000	DUP	4	0.0	3	VUS	Uncertain significance	0.00	0.0018448549089953	Below threshold
+chr16	61199999	61226000	DEL	0	-0.6	3	VUS	Uncertain significance	0.00	0.0021149928215891	Below threshold
+chr20	52099999	52131000	DUP	1	0.0	3	VUS	Uncertain significance	0.00	0.0005031477776356	Below threshold
+chr3	74199999	74228000	DEL	0	-0.6	3	VUS	Uncertain significance	-0.60	0.0029130561742931	Below threshold
+chr5	116199999	116235000	DUP	1	0.0	3	VUS	Uncertain significance	0.00	0.0004798187874257	Below threshold
+chr7	88299999	88318000	DEL	2	0.0	3	VUS	Uncertain significance	0.00	0.0008377203484997	Below threshold
+chrX	67543352	67730619	DEL	1	1.0	5	Pathogenic	Pathogenic	1.00	0.5410510897636414	Below threshold
+chrX	142499999	142540000	DUP	0	-0.6	3	VUS	Uncertain significance	-0.60	0.0008676526485942	Below threshold

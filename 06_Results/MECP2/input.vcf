@@ -1,0 +1,9 @@
+##fileformat=VCFv4.2
+##reference=GRCh38
+##contig=<ID=chrX>
+##INFO=<ID=GENE,Number=1,Type=String,Description="Gene symbol">
+##INFO=<ID=DISEASE,Number=1,Type=String,Description="Target disease">
+##INFO=<ID=TRANSCRIPT_HGVS,Number=1,Type=String,Description="Transcript HGVS">
+##INFO=<ID=PROTEIN_HGVS,Number=1,Type=String,Description="Protein HGVS">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chrX	154030948	rs61751362	G	A	.	PASS	GENE=MECP2;DISEASE=Rett_syndrome;TRANSCRIPT_HGVS=NM_001110792.2:c.916C>T;PROTEIN_HGVS=NP_001104262.1:p.Arg306Ter

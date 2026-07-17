@@ -1,0 +1,89 @@
+{
+  "CFTR": {
+    "disease": "Cystic Fibrosis",
+    "gene": "CFTR",
+    "inheritance": "Autosomal recessive",
+    "chromosome": "7",
+    "protein": "Cystic fibrosis transmembrane conductance regulator",
+    "mechanism": "Loss of CFTR chloride and bicarbonate channel function",
+    "major_features": [
+      "Chronic respiratory disease",
+      "Recurrent lung infections",
+      "Pancreatic insufficiency",
+      "Elevated sweat chloride",
+      "Male infertility"
+    ],
+    "validation_focus": [
+      "SNVs",
+      "Indels",
+      "Splice variants",
+      "Genotype-phenotype interpretation"
+    ]
+  },
+  "HBB": {
+    "disease": "Beta Thalassemia",
+    "gene": "HBB",
+    "inheritance": "Autosomal recessive",
+    "chromosome": "11",
+    "protein": "Hemoglobin subunit beta",
+    "mechanism": "Reduced or absent beta-globin production",
+    "major_features": [
+      "Microcytic hypochromic anemia",
+      "Fatigue",
+      "Splenomegaly",
+      "Bone changes",
+      "Iron overload in severe disease"
+    ],
+    "validation_focus": [
+      "Missense variants",
+      "Nonsense variants",
+      "Promoter variants",
+      "Splice variants",
+      "Local clinical relevance"
+    ]
+  },
+  "MECP2": {
+    "disease": "Rett Syndrome",
+    "gene": "MECP2",
+    "inheritance": "X-linked dominant",
+    "chromosome": "X",
+    "protein": "Methyl-CpG-binding protein 2",
+    "mechanism": "Disruption of transcriptional regulation and neuronal development",
+    "major_features": [
+      "Developmental regression",
+      "Loss of purposeful hand movements",
+      "Stereotypic hand movements",
+      "Impaired speech",
+      "Seizures",
+      "Abnormal breathing"
+    ],
+    "validation_focus": [
+      "X-linked interpretation",
+      "Missense variants",
+      "Nonsense variants",
+      "Frameshift variants",
+      "Phenotype matching"
+    ]
+  },
+  "FBN1": {
+    "disease": "Marfan Syndrome",
+    "gene": "FBN1",
+    "inheritance": "Autosomal dominant",
+    "chromosome": "15",
+    "protein": "Fibrillin-1",
+    "mechanism": "Abnormal extracellular microfibrils and dysregulated TGF-beta signalling",
+    "major_features": [
+      "Aortic root dilatation",
+      "Ectopia lentis",
+      "Long limbs and fingers",
+      "Skeletal abnormalities",
+      "Cardiovascular complications"
+    ],
+    "validation_focus": [
+      "Missense variants",
+      "Cysteine-altering variants",
+      "Protein-domain interpretation",
+      "Dominant inheritance"
+    ]
+  }
+}
