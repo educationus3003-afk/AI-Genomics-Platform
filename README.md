@@ -1,4 +1,6 @@
-# AI Genomics Platform
+## 🌐 Live Interactive Report
+
+[Open the complete AI Genomics Platform report](https://educationus3003-afk.github.io/AI-Genomics-Platform/)# AI Genomics Platform
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Research](https://img.shields.io/badge/status-research%20prototype-orange)
