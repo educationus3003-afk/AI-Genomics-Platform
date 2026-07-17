@@ -66,3 +66,9 @@ VCF
  ├── AI-assisted explanation
  │
  └── Tables, figures and HTML report
+
+## Live HTML Report
+
+View the complete interactive report through GitHub Pages:
+
+https://educationus3003-afk.github.io/AI-Genomics-Platform/
